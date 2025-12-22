@@ -1,0 +1,184 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background: #fffaf3;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #ff9800, #ff6f00);
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 15px;
+    margin-top: 8px;
+    opacity: 0.95;
+}
+
+/* HERO CONTAINER (IMAGES + NAME IN ONE LINE) */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+/* SMALL IMAGES (NOT LOGOS) */
+.hero-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background: white;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+/* PG NAME */
+.hero-container h1 {
+    font-size: 22px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* SECTION COMMON */
+section {
+    padding: 40px 15%;
+    background: white;
+    margin-bottom: 12px;
+}
+
+section h2 {
+    text-align: center;
+    color: #ff6f00;
+    margin-bottom: 18px;
+    font-size: 24px;
+}
+
+/* ABOUT */
+.about p {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* FACILITIES */
+.facility-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.facility-grid div {
+    background: #fff3e0;
+    padding: 12px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* FOOD */
+.food p {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* ROOMS TABLE */
+.rooms table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.rooms th {
+    background: #ff9800;
+    color: white;
+    padding: 10px;
+}
+
+.rooms td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* GALLERY */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* LOCATION */
+.location iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 12px;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    background: #fff3e0;
+}
+
+.contact p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background: #25d366;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background: #ff6f00;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    section {
+        padding: 30px 8%;
+    }
+
+    .hero-container h1 {
+        font-size: 18px;
+    }
+
+    .hero-container img {
+        width: 45px;
+        height: 45px;
+    }
+}
